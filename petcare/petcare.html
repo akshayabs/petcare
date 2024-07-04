@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petcare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="petcare.css">
+</head>
+<body>
+ <header class="header">
+    <a href="#" class="logo"><i class="fa-solid fa-paw"></i>  care</a>
+   
+ <nav class="navbar">
+    <a href="#home">home</a>
+    <a href="#about">about us</a>
+    <a href="#services">services</a>
+    <a href="#plan">plan</a>
+    <a href="#book">book now</a>
+    <a href="#customers">customer's review</a>
+ </nav>
+      <div class="icon">
+        <a href="#login" class="fas fa-user"></a>
+       </div>                                                                                                                                                          
+     </form>
+ </header>
+ 
+<section class="home" id="home">
+   <div class="content">
+      <h3><span>Hi</span> Welcome to our pet shop</h3>
+      <a href="#plan">Book now</a>
+   </div>
+
+</section>
+<section class="about" id="about">
+   <div class="about-img">
+       <img src="about.png" alt="">
+   </div>
+   <div class="about-text">
+      <h2>About us</h2>
+       <h3>We Listen</h3>
+       <p>to every bark, meow, chirp & word that pets & their people say, to understand what they really need..</p>
+       <h3>We Innovate</h3>
+       <p>With scientific rigor to create products & services that solve real problems.</p>
+       <a href="#" class="btn">Learn More</a>
+   </div>
+</section>
+<section class="services" id="services">
+      <div class="heading">
+        <h1>Our services</h>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <img src="dogboarding.png" alt="">
+          <h3>Dog Boarding</h3>
+        </div>
+
+        <div class="box">
+          <img src="catboarding.png" alt="">
+          <h3>Cat Boarding</h3>
+        </div>
+        <div class="box">
+          <img src="spa and grooming.png" alt="">
+          <h3>Spa and Grooming</h3>
+        </div>
+        <div class="box">
+          <img src="healthy meals.png" alt="">
+          <h3>Healthy Meals</h3>
+        </div>
+        <div class="box">
+          <img src="activy.png" alt="">
+          <h3>activity and exercise</h3>
+        </div>
+        <div class="box">
+          <img src="health care.png" alt="">
+          <h3>Health care</h3>
+        </div>
+</section>
+<section class="plan" id="plan">
+   <h1 class="heading">choose a <span>plan</span></h1>
+    <div class="box-container">
+      <div class="box">
+         <h3 class="title">pet care</h3>
+         <h3 class="day"> 1 Day </h3>
+         <div class="list">
+            <p> pet room <span class="fas fa-check"></span></p>
+            <p> pet grooming <span class="fas fa-check"></span></p>
+            <p> pet exercise <span class="fas fa-check"></span></p>
+            <p> pet meals <span class="fas fa-check"></span></p>
+         </div>
+         <div class="amount"><span>$</span>50</div>
+         <a href="#login" class="btn">choose plan</a>
+      </div>
+
+      <div class="box">
+         <h3 class="title">pet care</h3>
+         <h3 class="day"> 10 Days </h3>
+         <div class="list">
+            <p> pet room <span class="fas fa-check"></span></p>
+            <p> pet grooming <span class="fas fa-check"></span></p>
+            <p> pet exercise <span class="fas fa-check"></span></p>
+            <p> pet meals <span class="fas fa-check"></span></p>
+         </div>
+         <div class="amount"><span>$</span>350</div>
+         <a href="#login" class="btn">choose plan</a>
+      </div>
+
+      <div class="box">
+         <h3 class="title">pet care</h3>
+         <h3 class="day"> 30 Days </h3>
+         <div class="list">
+            <p> pet room <span class="fas fa-check"></span></p>
+            <p> pet grooming <span class="fas fa-check"></span></p>
+            <p> pet exercise <span class="fas fa-check"></span></p>
+            <p> pet meals <span class="fas fa-check"></span></p>
+         </div>
+         <div class="amount"><span>$</span>750</div>
+         <a href="#login" class="btn">choose plan</a>
+      </div>
+    </div>
+</section>
+<section class="login" id="login"> 
+  <div class="container">
+    <h1 class="label">User Login</h1>
+    <form class="login_form" action="home.html" method="post" name="form" onclick="return validated()">
+      <div class="font">Email or Phone</div>
+      <input autocomplete="off" type="text" name="email">
+      <div id="email_error">Please fill up your Email or Phone</div>
+      <div class="font font2">Password</div>
+      <input type="password" name="password">
+      <div id="pass_error">Please fill up your Password</div>
+      <button class="confirm" onclick="Message()">Login</button>
+    </form>
+  </div>
+  </section>	
+<section class="book" id="book">
+   <div class="container">
+    <form autocomplete="on" onsubmit="confirmBooking();return false">
+         <h1>Book Now..!</h1>
+          <div class="form-group">
+              <span>YourName</span>
+              <input type="text" placeholder="Enter your name" required="">
+          </div>
+          <div class="form-group">
+              <span>Your email</span>
+              <input type="email" placeholder="Enter your email" required="">
+          </div>
+          <div class="form-group">
+              <span>Your pet's Name</span>
+              <input type="text" placeholder="Enter Your Pet's Name" required="">
+          </div>
+          <div class="form-group">
+              <span>Phone Number</span>
+              <input type="number" placeholder="Enter Your Phone Number" required="">
+          </div>
+          <div class="form-group">
+              <span>Date of boarding</span>
+              <input type="date" placeholder="" required="">
+          </div>
+          <div class="form-group">
+              <span>Your Message</span>
+              <input type="text" placeholder="Your Message">
+          </div>
+          <button class="confirm" onclick="message()">Book Now</button>
+      </form>
+  </div>
+</section>
+<section class="customers" id="customers">
+   <div class="heading">
+      <h1>Customer's Review</h1>
+   </div>
+   <div class="customers-container">
+     <div class="box">
+       <div class="stars">
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+       </div>
+       <p> We were leaving town for several days and could not find anyone to watch our Boston Terrier. We had heard about The Good Life so we decided to board her there. She had so much fun that when we went to pick her up, she turned around and ran back in to play some more! After getting home, she was konked out within 5 minutes and did not wake up until the next morning.</p>
+       <h2>sam</h2>
+       <img src="man profile.png" alt=""></img>
+     </div>
+     <div class="box">
+       <div class="stars">
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+       </div>
+       <p> This place is amazing. They make sure all the dogs have their shots and gather tons of info up front on every dog they care for, so it’s super safe. My little frenchton has the best time and they really love all the dogs. They share picture updates when you board overnight, and when I take Moo for the day she comes home super happy and tired. </p>
+       <h2>john</h2>
+       <img src="man profile.png" alt=""></img>
+     </div>
+     <div class="box">
+       <div class="stars">
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+         <i class="fa-solid fa-star"></i>
+       </div>
+       <p> We love The Good Life! And more importantly, so does our dog Shasta, We drop our pup off for day care often and occasional overnights. Jennie and Beth and the staff are truly a good group whom care and love dogs, Shasta even comes home with better manners than when I drop her off, they really play and work with the dogs and are so knowledgeable. I am so thankful!</p>
+       <h2>Noah</h2>
+       <img src="gril profile.png" alt=""></img>
+     </div>
+   </div>
+ </section>
+ <section class="footer">
+   <div class="footer-box">
+     <h2>ABC Pet Care</h2>
+     <p>Keep in touch</p>
+     <div class="social">
+       <a href="#"><i class="fa-brands fa-facebook"></i></a>
+       <a href="#"><i class="fa-brands fa-instagram"></i></a>
+       <a href="#"><i class="fa-brands fa-twitter"></i></a>
+       <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+     </div>
+   </div>
+     <div class="footer-box">
+      <h2>Support</h2>
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Return Policy</a></li>
+      <li><a href="#">Terms Of Use</a></li>
+ 
+    </div>
+    <div class="footer-box">
+      <h3>View Guides</h3>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog Posts</a></li>
+      <li><a href="#">Our branches</a></li>
+    </div>
+   </div>
+   <div class="footer-box">
+     <h3>Contact</h3>
+     <div class="contact">
+       <span><i class="fa-solid fa-map"></i>the city Dhaka (zigatola) andincorporatedin ABC PetCare</span><bR>
+         <span><i class="fa-solid fa-phone"></i>+1 444 744 8444</span><br>
+         <span><i class="fa-solid fa-envelope"></i>petcare@shop.com</span>
+     </div>
+   </div>
+ </section>
+<script src="petcare.js"></script>
+</body>
+</html>
